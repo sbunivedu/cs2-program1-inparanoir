@@ -18,11 +18,20 @@ public static boolean isOperand(char c){
       return 1;
     }
   }
-  /* "stack" is the object reference to an object of CharStack. "current" is the current the character in the input string and it represents an operator */
+  /* "stack" is the object reference to an object
+  of CharStack. "current" is the current the character
+  in the input string and it represents an operator */
+
+
+  /* public boolean contains(T){
+
+  }
+  */
+
   while (!stack.isEmpty() &&
     precedenceOrder(stack.peek()) >= precedenceOrder(current)){
     System.out.print(stack.pop());
   }
-  stack.push(current); 
-<center>hi</center>
+  stack.push(current);
+
 
